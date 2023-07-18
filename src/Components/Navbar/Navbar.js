@@ -19,12 +19,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 mb-3">
+    <nav className="bg-gray-800 shadow-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link to="/" className="text-white text-3xl">
+              <Link to="/" className=" text-3xl font-bold text-secondary">
                 Next Salution
               </Link>
             </div>
@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button className="nav-item">
               {closeNav ? (
-                <FaTimes onClick={handleCloseNav} />
+                <FaTimes onClick={handleCloseNav} className="absolute right-8 top-6"/>
               ) : (
                 <FaBarsStaggered onClick={handleCloseNav} />
               )}

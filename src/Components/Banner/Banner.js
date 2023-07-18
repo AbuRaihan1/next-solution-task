@@ -14,7 +14,7 @@ const Banner = () => {
       next: 2,
       title: (
         <>
-          Welcome to, <br /> next it solution
+          Welcome to, <br /> next salution
         </>
       ),
     },
@@ -43,7 +43,7 @@ const Banner = () => {
     },
   ];
   return (
-    <div className="carousel w-full md:w-[96%] md:mx-[2%]">
+    <div className="carousel w-full md:w-[96%] md:mx-[2%] mt-4">
       {bannerData.map((slide) => (
         <BannerItem key={slide.id} slide={slide} />
       ))}
