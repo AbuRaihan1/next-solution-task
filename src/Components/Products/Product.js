@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Title from "../Title/Title";
 
 const Product = ({ product }) => {
   const { Rating, description, image, price, title } = product;
