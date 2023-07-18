@@ -1,0 +1,20 @@
+.navbarSmItemStyle {
+  background: #1f2937;
+  width: 200px;
+  position: absolute;
+  right: 10px;
+  top: 70px;
+}
+
+.navbarSmItemStyle a {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbarSmItemStyle {
+    display: inherit !important;
+    position: inherit !important;
+    margin-right: 120px !important;
+  }
+
+}
