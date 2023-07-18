@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [closeNav, setCloseNav] = useState(false);
@@ -23,9 +24,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <a href="/" className="text-white">
-                Your Logo
-              </a>
+              <Link to="/" className="text-white text-3xl">
+                Next Salution
+              </Link>
             </div>
           </div>
 
@@ -45,9 +46,9 @@ const Navbar = () => {
                 closeNav ? "md:flex navbarSmItemStyle" : "hidden"
               }`}
             >
-              <a href="###" className="nav-item">
+              <Link to='/' className="nav-item">
                 Home
-              </a>
+              </Link>
               <a href="##" className="nav-item">
                 About
               </a>
@@ -68,7 +69,7 @@ const Navbar = () => {
                 {isDropdownOpen && (
                   <div className="absolute right-0 z-50 mt-2 py-2 w-32 bg-white rounded-md shadow-2xl">
                     <a
-                      href="##"
+                      href="#product"
                       className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                     >
                       Product 1
