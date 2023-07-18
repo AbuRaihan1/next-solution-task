@@ -25,7 +25,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link to="/" className=" text-3xl font-bold text-secondary">
-                Next Salution
+                Next Sulation
               </Link>
             </div>
           </div>
@@ -33,7 +33,10 @@ const Navbar = () => {
           <div className="md:hidden">
             <button className="nav-item">
               {closeNav ? (
-                <FaTimes onClick={handleCloseNav} className="absolute right-8 top-6"/>
+                <FaTimes
+                  onClick={handleCloseNav}
+                  className="absolute right-8 top-6"
+                />
               ) : (
                 <FaBarsStaggered onClick={handleCloseNav} />
               )}
@@ -46,7 +49,7 @@ const Navbar = () => {
                 closeNav ? "md:flex navbarSmItemStyle" : "hidden"
               }`}
             >
-              <Link to='/' className="nav-item">
+              <Link to="/" className="nav-item">
                 Home
               </Link>
               <a href="##" className="nav-item">

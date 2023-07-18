@@ -14,7 +14,7 @@ const Banner = () => {
       next: 2,
       title: (
         <>
-          Welcome to, <br /> next salution
+          Welcome to, <br /> Next sulation
         </>
       ),
     },

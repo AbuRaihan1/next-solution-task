@@ -36,7 +36,7 @@ const Footer = () => {
         </Link>
       </div>
       <p className="text-center text-white mt-4">
-      &copy; All rights reserved by Abu Raihan
+        &copy; All rights reserved by Abu Raihan
       </p>
     </footer>
   );
